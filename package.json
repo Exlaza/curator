@@ -4,7 +4,9 @@
   "description": "Review Aggregator",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --mode development --watch",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -17,10 +19,14 @@
   },
   "homepage": "https://github.com/Exlaza/curator#readme",
   "dependencies": {
+    "@babel/core": "^7.1.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.2",
     "babel-preset-env": "^1.7.0",
